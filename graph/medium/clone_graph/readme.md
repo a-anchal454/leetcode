@@ -6,8 +6,9 @@ This repository contains a C++ solution for the **Clone Graph** problem.
 https://leetcode.com/problems/clone-graph/description/ 
 
 
-```cpp
+
 #### Solution I  using BFS 
+```cpp
   Node* cloneGraph(Node* node) {
        if(node==NULL) return NULL; 
        unordered_map<Node*,Node*> visited;
@@ -27,9 +28,9 @@ https://leetcode.com/problems/clone-graph/description/
        }  
        return visited[node];
     }
-
+```
 #### Solution II - recursion
-
+```cpp
   Node* cloneGraph(Node* node) {
         if(node==NULL) return NULL;
         visited[node] = new Node(node->val);
