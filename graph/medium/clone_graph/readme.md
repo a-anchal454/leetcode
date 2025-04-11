@@ -6,6 +6,7 @@ This repository contains a C++ solution for the **Clone Graph** problem.
 https://leetcode.com/problems/clone-graph/description/ 
 
 
+```cpp
 #### Solution I  using BFS 
   Node* cloneGraph(Node* node) {
        if(node==NULL) return NULL; 
@@ -40,3 +41,6 @@ https://leetcode.com/problems/clone-graph/description/
         }
         return visited[node];
     }
+
+
+    
